@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+        font-family: "Times New Roman", serif;
+        background-color: #dcdcdc;
+        margin: 20px;
+    }
+
+    h3 {
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+    /* Espacement des champs */
+    div {
+        margin-bottom: 10px;
+    }
+
+    /* Labels */
+    label {
+        display: inline-block;
+        width: 250px;
+    }
+
+    /* Inputs */
+    input, select {
+        padding: 5px;
+        border: 1px solid gray;
+    }
+
+    /* Checkbox et radio */
+    input[type="checkbox"],
+    input[type="radio"] {
+        margin-left: 10px;
+    }
+
+    /* Boutons */
+    button {
+        padding: 5px 10px;
+        border: 1px solid black;
+        background-color: #e6e6e6;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #ccc;
+    }
+
+    /* Alignement boutons */
+    .button {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    </style>
+</head>
+<body>
+    <h3> <b>Ajouter un club</b> </h3>
+    <form action="" id="form">
+         <fieldset>
+            <legend>Responsable du club :</legend>
+     <div>
+            <label for="nom">Nom :</label>
+            <input type="text" placeholder="saisir votre nom" id="nom">
+        </div>
+        <div>
+            <label for="prenom">Prénom :</label>
+            <input type="text" placeholder="saisir votre prénom" id="prenom">
+        </div>
+       <div>
+        <label for="email">E-Mail du responsable :</label>
+        <input type="email" placeholder="saisir votre email" id="email">
+       </div>
+       <div>
+        <label for="Cemail">Confirmation E-mail du responsable :</label>
+        <input type="email" placeholder="confirmer votre email" id="Cemail">
+       </div>
+       <div>
+        <label for="mdp"> Mot de passe :</label>
+        <input type="password" placeholder="saisir un mot de passe" id="mdp">
+       </div>
+    </fieldset>
+      <fieldset>
+             <legend>Infos Club :</legend>
+        <div>
+            <label for="nomC">Nom du club :</label>
+            <input type="text" placeholder="saisir le nom du club" id="nomC">
+        </div>
+        <div>
+            <label for="df">Date de fondation :</label>
+            <input type ="date" placeholder="mm/dd/yyyy" id="df" >
+        </div>
+        <div>
+            <label for="nbrM">Nombre de membres :</label>
+            <input type="number" placeholder="saisir le nombre de membres" id="nbrM">
+        </div>
+        <div>
+            <label for="categorie">catégorie :</label>
+            <select name="categorie" id="categorie">
+                <option value="select " selected >select</option>
+                <option value="informatique">informatique</option>
+                <option value="éléctronique">éléctronique</option>
+                <option value="mécanique">mécanique</option>
+                <option value="génie civil">génie civil</option>
+            </select>
+        </div>
+
+        <div>
+            <p>
+                    types d'activités :<br />
+                    <input type="checkbox" name="seminaire" id="seminaire" /> <label for="seminaire">Séminaire</label><br />
+                    <input type="checkbox" name="formation" id="formation" /> <label for="formation"> Formation</label><br />
+                    <input type="checkbox" name="evenements" id="evenements" /> <label for="evenements">Evénements</label><br />
+                    <input type="checkbox" name="tb" id="tb" /> <label for="tb">Team Building</label><br />
+                    <input type="checkbox" name="autres" id="autres" /> <label for="autres">Autres</label>
+                </p>
+        </div>
+
+        <div>
+                <p>
+                    Adhésion :<br />
+                    <input type="radio" name="adhesion" value="ouverte" id="ouverte" /> <label for="ouverte">Ouverte</label><br />
+                    <input type="radio" name="adhesion" value="fermee" id="fermee" /> <label for="fermee">Fermée</label>
+                </p>
+        </div>
+
+        <div class="button">
+            <button type="submit">Envoyer</button>
+        </div>
+        <div class="button">
+            <button type="reset">Tout enlever</button>
+        </div>
+    
+</fieldset>
+      
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>
